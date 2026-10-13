@@ -3,4 +3,4 @@ if True:
     print("Welcome")
     print("Tedting")
     print("This is HSBC Testing ")
-    a=(a+b)**3
+    a=(a+b)**30
