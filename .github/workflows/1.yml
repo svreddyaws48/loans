@@ -1,5 +1,7 @@
 name: Workflow-1
-on: workflow_dispatch
+on: 
+- workflow_dispatch
+- push
 jobs:
   jobx:
     runs-on: ubuntu-latest
