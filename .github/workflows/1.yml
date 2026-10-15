@@ -3,7 +3,7 @@ on:
 - workflow_dispatch
 jobs:
   jobx:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: step-1
       run: echo123 "Hello World"
