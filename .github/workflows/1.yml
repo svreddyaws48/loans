@@ -9,7 +9,7 @@ jobs:
     - name: step-1
       run: echo "Hello World"
     - name: step-2
-      run: date
+      run: date12
     - name: step-3
       run: |
          pwd
