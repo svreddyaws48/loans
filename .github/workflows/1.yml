@@ -1,7 +1,6 @@
 name: Workflow-1
 on: 
 - workflow_dispatch
-- push
 jobs:
   jobx:
     runs-on: ubuntu-latest
@@ -9,9 +8,10 @@ jobs:
     - name: step-1
       run: echo "Hello World"
     - name: step-2
-      run: date12
-    - name: step-3
-      run: |
-         pwd
-         hostnamectl		 
- 
+      run: date
+  joby:
+    runs-on: windows-latest 
+    steps:
+    - run: |
+        echo %path%
+        dir 
