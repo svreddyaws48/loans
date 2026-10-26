@@ -10,7 +10,8 @@ jobs:
          echo "Username is $USER"
          sleep 10
          date
-  joby: 
+  joby:
+    needs: jobx  
     runs-on: ubuntu-latest
     steps:
     - name: job2-Step1
