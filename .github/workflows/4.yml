@@ -1,0 +1,23 @@
+name: workflow-4
+on: workflow_dispatch
+jobs:
+  jobx:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Job1 step1
+      run: |
+        loc=hyderabad
+        echo "loc=hyderabad" >> $GITHUB_ENV
+        echo "Location is $loc"
+    - name: Job1 step2
+      run: |
+       echo "This is step2" 
+       echo "Location is $loc"
+    joby:
+      needs: jobx
+      runs-on: ubuntu-latest
+      steps:
+      - name: This is Job2 step1
+        run: |
+          echo "Job2 Step1 location is $loc" 
+        
