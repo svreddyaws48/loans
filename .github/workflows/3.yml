@@ -17,10 +17,13 @@ jobs:
         echo "Name is ${{ env.name }}  "
         echo "Age is ${{ env.age }}  "
         loc=hyderabad
+        echo "loc=hyderabad" >> $GITHUB_ENV
+        echo "abc=bbc" >> $GITHUB_ENV
         echo "Location is $loc"
     - name: this i step2
       run: |
        echo "This is step2" 
        echo "Age is ${{ env.age }}  "
        echo "Location is $loc"
+       echo "Testing $abc"
  
