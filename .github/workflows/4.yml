@@ -3,6 +3,9 @@ on: workflow_dispatch
 jobs:
   jobx:
     runs-on: ubuntu-latest
+    outputs:
+       app_name: iosapp
+       owner: hsbc
     steps:
     - name: Job1 step1
       id: step1
@@ -21,5 +24,6 @@ jobs:
       steps:
       - name: This is Job2 step1
         run: |
-          echo "Job2 Step1 location is $loc" 
+          echo "Job2 Step1 location is $loc"
+          echo "${{ needs.jobx.outputs.app_name}}"          
         
