@@ -1,0 +1,17 @@
+name: workflow-3
+on: workflow_dispatch
+env:
+  name: sheshivardhan
+  age: '22'
+jobs:
+  jobx:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Prining Env Value
+      run: |
+        echo "Name is ${{ env.name }}  "
+        echo "Name is ${{ env.age }}  "
+    - name: this i step2
+      run: |
+       echo "This is step2"      
+  
