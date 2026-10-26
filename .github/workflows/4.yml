@@ -13,7 +13,7 @@ jobs:
       run: |
        echo "This is step2" 
        echo "Location is $loc"
-    joby:
+  joby:
       needs: jobx
       runs-on: ubuntu-latest
       steps:
