@@ -11,6 +11,6 @@ jobs:
     environment:
       name: ${{ inputs.myenv }}
     steps:
-    - name: Env Server IP
+    - name: Selected env ${{ inputs.myenv }}  Server IP
       run: |
         echo "Server Ip is ${{ vars.SERVER_IP }}"
