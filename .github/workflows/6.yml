@@ -1,10 +1,15 @@
 name: Workflow-6
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+      myenv:
+        type: environment
+        required: true
 jobs:
   jobx:
     runs-on: ubuntu-latest
     environment:
-      name: DEV
+      name: ${{ inputs.myenv }}
     steps:
     - name: Env Server IP
       run: |
