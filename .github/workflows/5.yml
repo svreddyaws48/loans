@@ -1,0 +1,10 @@
+name: Workflow-5
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps
+    - name: Access Rep Vars
+      run: |
+         echo " User name is ${{ vars.USER_NAME }}"
+         echo " Owner name is ${{ vars.OWNER }}"
