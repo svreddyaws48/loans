@@ -4,7 +4,7 @@ jobs:
   jobx:
     runs-on: ubuntu-latest
     environment:
-      name: PROD
+      name: DEV
     steps:
     - name: Env Server IP
       run: |
