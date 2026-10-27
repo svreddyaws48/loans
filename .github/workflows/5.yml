@@ -8,3 +8,4 @@ jobs:
       run: |
          echo " User name is ${{ vars.USER_NAME }}"
          echo " Owner name is ${{ vars.OWNER }}"
+         echo " My Passwd is ${{ secrets.MYPASSWD }}"
