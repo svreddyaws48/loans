@@ -6,8 +6,8 @@ jobs:
     steps:
     - name: install Docker
       run: |
-         sudo apt update
-         sudo apt install docker.io -y         
+         sudo apt-get update
+         sudo apt-get install docker.io -y         
     - name: Docker login
       run: |
          docker login -u ${{vars.DOCKER_USER}} -p ${{ secrets.DOCKER_PASSWD }}
