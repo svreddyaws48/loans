@@ -1,0 +1,14 @@
+name: Workflow-7
+on: workflow_dispatch
+jobs:    
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install Docker
+      run: |
+         apt update
+         apt install docker.io -y         
+    - name: Docker login
+      run: |
+         docker login -u ${{vars.DOCKER_USER}} -p ${{ secrets.DOCKER_PASSWD }}
+    
