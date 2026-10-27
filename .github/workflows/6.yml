@@ -8,5 +8,4 @@ jobs:
     steps:
     - name: Env Server IP
       run: |
-         echo "Server Ip is ${{ vars.SERVER_IP }}"
-  	
+        echo "Server Ip is ${{ vars.SERVER_IP }}"
