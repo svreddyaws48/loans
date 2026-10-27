@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: PROD
-      steps:
-      - name: Env Server IP
-        run: |
-           echo "Server Ip is ${{ vars.SERVER_IP }}"
+    steps:
+    - name: Env Server IP
+      run: |
+         echo "Server Ip is ${{ vars.SERVER_IP }}"
   	
