@@ -3,7 +3,7 @@ on: workflow_dispatch
 jobs:
   job1:
     runs-on: ubuntu-latest
-    steps
+    steps:
     - name: Access Rep Vars
       run: |
          echo " User name is ${{ vars.USER_NAME }}"
