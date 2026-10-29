@@ -15,3 +15,9 @@ jobs:
         echo " CommitId  is ${{ github.sha }}"
         echo " RunId  is ${{ github.run_id }}"
         echo " Runnumber  is ${{ github.run_number }}"
+        echo "Runner Name is ${{ runner.name}}"
+        echo "Runner OS is ${{ runner.OS }}"
+        echo "Runner OS is ${{ runner.arch }}"
+        echo "Runner OS is ${{ runner.arch }}"
+        echo "Workspace ${{ github.workspace }}"
+      
