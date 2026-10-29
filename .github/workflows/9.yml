@@ -1,0 +1,17 @@
+name: Workflow-9
+on: workflow_dispatch
+jobs:
+  jobx:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step-1
+      run: |
+         echo "This is step1"
+    - name: step-2
+      if: 10==5
+      run: |
+        echo "This is Step2"
+    - name: Step-3
+      run: |
+         pwd
+         echo "Step-3 bye"         
