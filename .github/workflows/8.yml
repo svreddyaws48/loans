@@ -13,3 +13,5 @@ jobs:
         echo " Actor name is ${{ github.actor }}"
         echo " Event name is ${{ github.event_name  }}"
         echo " CommitId  is ${{ github.sha }}"
+        echo " RunId  is ${{ github.run_id }}"
+        echo " Runnumber  is ${{ github.run_number }}"
