@@ -1,0 +1,15 @@
+name: Workflow-8
+on:
+- push
+- workflow_dispatch
+jobs:
+  jobx:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step-1
+      run:
+        echo "GitHub Reponame ${{ github.repository }}"
+        echo "Git Hub Branch Name ${{github.ref_name }}"
+        echo " Actor name is ${{ github.actor }}"
+        echo " Event name is ${{ github.event_name  }}"
+        echo " CommitId  is ${{ github.sha }}"
