@@ -10,6 +10,7 @@ jobs:
     - name: step-2
       if: ${{github.ref_name }}=='master'
       run: |
+        echo "Branch name is ${{github.ref_name }}"
         echo "This is Step2"
     - name: Step-3
       run: |
