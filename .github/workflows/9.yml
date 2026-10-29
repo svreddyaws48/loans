@@ -8,7 +8,7 @@ jobs:
       run: |
          echo "This is step1"
     - name: step-2
-      if: 10==10 || 20==30 
+      if: ${{github.ref_name }}=='master'
       run: |
         echo "This is Step2"
     - name: Step-3
