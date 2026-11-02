@@ -1,0 +1,23 @@
+name: workflow-10-1
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step1
+      run: |
+         pwd
+         echo " Testing"
+          python 1.py
+    - name: step2
+      run: |
+         echo "This is step2" 
+    - name: step3
+      run: |
+       echo "This Skipped if Job get Failure"
+    - name: step-4
+      run: |
+        echo "Alway executed" 
+        echo "Bye"        
+      
+    
