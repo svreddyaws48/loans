@@ -1,7 +1,7 @@
 name: workflow-12
 on: workflow_dispatch
 env:
-  qua: ["Name":"Sheshi","Age":"22"]
+  qua: '["Name":"Sheshi","Age":"22"]'
 jobs:
   jobx:
     runs-on: ubuntu-latest
