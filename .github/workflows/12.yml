@@ -10,5 +10,13 @@ jobs:
       run: |
         echo "env Value Name os ${{ fromJSON(env.qua).Name }}"
         echo "env Value Age os ${{ fromJSON(env.qua).Age }}"
-        echo "env Value  ${{ fromJSON(env.qua) }}"
+        echo "env Value Object  ${{ env.qua }}"
+        echo "env Value After fromJSON  ${{ fromJSON(env.qua) }}"
+    - name: Github Context
+      run: |
+         echo "env Value  ${{ github }}"
+         echo "Github Context After Json  ${{ fromJSON(github) }}"
+ 
+
+ 
          
