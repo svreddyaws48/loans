@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: Json Test
       run: |
-        echo "env Value Name os ${{ toJSON(env.qua).Name }}"
-        echo "env Value Age os ${{ toJSON(env.qua).age }}"
-        echo "env Value  ${{ toJSON(env.qua) }}"
+        echo "env Value Name os ${{ fromJSON(env.qua).Name }}"
+        echo "env Value Age os ${{ fromJSON(env.qua).Age }}"
+        echo "env Value  ${{ fromJSON(env.qua) }}"
          
