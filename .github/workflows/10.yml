@@ -16,7 +16,7 @@ jobs:
       if:  ${{ failure()}}  
       run: |
        echo "This Skipped if Job get Failure"
-    - name: step4
+    - name: step-4
       if: ${{ always()}} 
       run: |
         echo "Alway executed" 
