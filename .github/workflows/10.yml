@@ -24,6 +24,7 @@ jobs:
         echo "Alway executed" 
         echo "Bye"        
     - name: step-4
+      if: ${{ cancelled() }}
       run: |
          echo "step--this is cancelled "      
       
