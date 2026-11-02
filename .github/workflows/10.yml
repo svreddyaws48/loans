@@ -1,5 +1,5 @@
 name: workflow-10
-on: workflow_distpatch
+on: workflow_dispatch
 jobs:
   job1:
     runs-on: ubuntu-latest
