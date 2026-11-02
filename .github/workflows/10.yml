@@ -1,0 +1,25 @@
+name: workflow-10
+on: workflow_distpatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step1
+      run: |
+         pwd
+         echo " Testing"
+    - name: step2
+      if: ${{ success() }}   
+      run: |
+         echo "This is step2" 
+    - name: step3
+      if:  ${{ failure()}}  
+      run: |
+       echo "This Skipped if Job get Failure"
+    - name: step4
+      if: ${{ always()}} 
+      run: |
+        echo "Alway executed" 
+        echo "Bye"        
+      
+    
