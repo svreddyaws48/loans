@@ -8,6 +8,7 @@ jobs:
       run: |
          pwd
          echo " Testing"
+         exit 1
     - name: step2
       if: ${{ success() }}   
       run: |
