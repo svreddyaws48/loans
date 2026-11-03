@@ -10,3 +10,5 @@ jobs:
          echo "${{ toJSON(100)}}"
          echo "${{ toJSON(true)}}"
          echo "${{ toJSON(github) }}"
+         echo "${{ github.ref }}"
+         echo "${{ github.event }}"
