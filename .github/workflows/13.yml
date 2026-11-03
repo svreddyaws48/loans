@@ -2,7 +2,7 @@ name: workflow-13
 on: workflow_dispatch
 env:
   qua: '["MCA","BCA","LLB"]'
-  loc: '{"HNO":"10/A","Loc":"Hyd"}'
+  loc: '{"HNO":"10/A","City":"Hyd"}'
 jobs:
   jobx:
     runs-on: ubuntu-latest
@@ -12,6 +12,7 @@ jobs:
         echo "${{ fromJSON(env.qua) }}"
         echo "First Value ${{ fromJSON(env.qua)[0] }}"
         echo "LOC is ${{ env.loc }}"
+        echo "City IS ${{ env.loc.City }}"
         echo "HNO IS ${{ env.loc.HNO }}"
         
         
