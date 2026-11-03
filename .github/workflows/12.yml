@@ -9,3 +9,4 @@ jobs:
          echo "${{ toJSON('sheshi')}}"
          echo "${{ toJSON(100)}}"
          echo "${{ toJSON(true)}}"
+         echo "${{ github }}"
