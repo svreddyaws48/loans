@@ -1,0 +1,11 @@
+name: workflow-13
+on: workflow_dispatch
+env:
+  qua: ["MCA","BCA","LLB"]
+jobs:
+  jobx:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Step-1
+      run: |
+        echo "${{ env.qua }}"
