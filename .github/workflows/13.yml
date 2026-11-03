@@ -1,7 +1,7 @@
 name: workflow-13
 on: workflow_dispatch
 env:
-  qua: ["MCA","BCA","LLB"]
+  qua: ['MCA','BCA','LLB']
 jobs:
   jobx:
     runs-on: ubuntu-latest
