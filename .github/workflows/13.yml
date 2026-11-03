@@ -11,7 +11,7 @@ jobs:
       run: |
         echo "${{ fromJSON(env.qua) }}"
         echo "First Value ${{ fromJSON(env.qua)[0] }}"
-        echo "LOC is ${{ env.Loc }}"
+        echo "LOC is ${{ env.loc }}"
         echo "HNO IS ${{ env.loc.HNO }}"
         
         
