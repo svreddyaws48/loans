@@ -12,8 +12,8 @@ jobs:
         echo "${{ fromJSON(env.qua) }}"
         echo "First Value ${{ fromJSON(env.qua)[0] }}"
         echo "LOC is ${{ env.loc }}"
-        echo "City IS ${{ env.loc.City }}"
-        echo "HNO IS ${{ env.loc.HNO }}"
+        echo "City IS ${{ fromJSON(env.loc).city }}"
+        echo "HNO IS ${{ fromJSON(env.loc).HNO }}"
         
         
        
