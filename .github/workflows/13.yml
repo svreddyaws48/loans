@@ -10,7 +10,7 @@ jobs:
     - name: Step-1
       run: |
         echo "${{ fromJSON(env.qua) }}"
-        echo "${{ fromJSON(env.qua)[0] }}"
+        echo "${{ env.qua[0] }}"
         
         
        
