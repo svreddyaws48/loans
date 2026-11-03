@@ -1,7 +1,8 @@
 name: workflow-13
 on: workflow_dispatch
 env:
-  qua: ['MCA','BCA','LLB']
+  qua: '["MCA","BCA","LLB"]'
+  loc: 'hyd12'
 jobs:
   jobx:
     runs-on: ubuntu-latest
@@ -9,3 +10,5 @@ jobs:
     - name: Step-1
       run: |
         echo "${{ env.qua }}"
+        
+        
