@@ -1,22 +1,11 @@
 name: workflow-12
 on: workflow_dispatch
-env:
-  qua: '{"Name":"Sheshi","Age":"22"}'
 jobs:
   jobx:
     runs-on: ubuntu-latest
     steps:
-    - name: Json Test
+    - name: step1
       run: |
-        echo "env Value Name os ${{ fromJSON(env.qua).Name }}"
-        echo "env Value Age os ${{ fromJSON(env.qua).Age }}"
-        echo "env Value Object  ${{ env.qua }}"
-        echo "env Value After fromJSON  ${{ fromJSON(env.qua) }}"
-    - name: Github Context
-      run: |
-         echo "env Value  ${{ github }}"
-         echo "Github Context After Json  ${{ fromJSON(github) }}"
- 
-
- 
-         
+         echo "${{ toJSON('sheshi')}}"
+         echo "${{ toJSON(100)}}"
+         echo "${{ toJSON(true)}}"
